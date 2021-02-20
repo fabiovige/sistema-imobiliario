@@ -11,4 +11,11 @@ class AuthController extends Controller
     {
         return view('admin.index');
     }
+
+    public function home()
+    {
+        return view('admin.dashboard');
+    }
+
+
 }
