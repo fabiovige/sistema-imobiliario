@@ -29,12 +29,12 @@
 
                 <label>
                     <span class="field icon-envelope">E-mail:</span>
-                    <input type="email" name="email" placeholder="Informe seu e-mail" />
+                    <input type="email" name="email" placeholder="Informe seu e-mail" value="fabiovige@gmail.com" />
                 </label>
 
                 <label>
                     <span class="field icon-unlock-alt">Senha:</span>
-                    <input type="password" name="password_check" placeholder="Informe sua senha" />
+                    <input type="password" name="password_check" placeholder="Informe sua senha" value="123456" />
                 </label>
 
                 <button class="gradient gradient-orange radius icon-sign-in">Entrar</button>
@@ -59,6 +59,7 @@
 
 <script src="{{ url(mix('backend/assets/js/jquery.js')) }}"></script>
 <script src="{{ url(mix('backend/assets/js/login.js')) }}"></script>
+<script src="{{ url(mix('backend/assets/js/sweetalert2.js')) }}"></script>
 
 </body>
 </html>

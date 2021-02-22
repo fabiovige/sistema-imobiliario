@@ -45,6 +45,10 @@ mix
         'resources/views/admin/assets/js/scripts.js'
     ], 'public/backend/assets/js/scripts.js')
 
+    .scripts([
+        'resources/views/admin/assets/js/sweetalert2.all.min.js'
+    ], 'public/backend/assets/js/sweetalert2.js')
+
     .copyDirectory('resources/views/admin/assets/js/datatables', 'public/backend/assets/js/datatables')
     .copyDirectory('resources/views/admin/assets/js/select2', 'public/backend/assets/js/select2')
     .copyDirectory('resources/views/admin/assets/js/tinymce', 'public/backend/assets/js/tinymce')
