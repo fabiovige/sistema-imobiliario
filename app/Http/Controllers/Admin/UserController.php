@@ -3,8 +3,10 @@
 namespace FabioVige\Http\Controllers\Admin;
 
 use FabioVige\Http\Requests\Admin\User as UserRequest;
-use Illuminate\Http\Request;
+use FabioVige\User;
 use FabioVige\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
 
 class UserController extends Controller
 {
@@ -46,7 +48,13 @@ class UserController extends Controller
      */
     public function store(UserRequest $request)
     {
-        var_dump($request->all());
+//        $user = new User();
+//        $user->fill($request->all());
+//        var_dump($user->getAttributes(), $request->all());
+
+        $userCreate = User::create($request->all());
+
+        var_dump($userCreate);
     }
 
     /**
